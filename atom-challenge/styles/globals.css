@@ -8,4 +8,114 @@
         padding: 0;
         margin: 0;
     }
+
+    .headerLink {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        padding: 0.5em;
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    .headerLink:before,
+    .headerLink:after {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid #4FFF4B;
+        border-radius: 1em;
+        bottom: 0.3em;
+        transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    
+    .headerLink:before {
+        width: 1em;
+        transform-origin: left;
+    }
+    
+    .headerLink:after {
+        width: 82%;
+        left: 1em;
+        transform: translateX(110%);
+    }
+    
+    .headerLink:hover:before {
+        transform: scaleX(0.3);
+    }
+    
+    .headerLink:hover:after {
+        transform: translateX(0);
+    }
+
+    .hiddenIcon{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+    }
+    
+    .hiddenIcon div{
+        width: 2rem;
+        height: 0.25rem;
+        background-color: white;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+    }
+
+    .hiddenIcon div:first-child {
+        transform: rotate(0);
+    }
+    .hiddenIcon div:nth-child(2) {
+        opacity: 1;
+        transform: translateX(0)
+    }
+    .hiddenIcon div:nth-child(3) {
+        transform: rotate(0)
+    }
+
+    .hiddenIcon-active  div:first-child {
+        transform: rotate(45deg) !important;
+    }
+    .hiddenIcon-active  div:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px) !important;
+    }
+    .hiddenIcon-active  div:nth-child(3) {
+        transform: rotate(-45deg) !important
+    }
+
+    .hiddenMenu{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @apply bg-primary;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        min-height: 100vh;
+        position: fixed;
+        top: 80px;
+        right: 0; 
+        padding-inline: 2rem;
+        max-width: 100%;
+        z-index: 40;
+        display: flex;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .hiddenMenu-active{
+        transform: translateX(0) !important;
+    }
+
+    .wrapper-header-hero{
+        @apply px-8 lg:px-20 py-8 text-white;
+    }
 }
