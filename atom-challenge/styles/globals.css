@@ -3,10 +3,27 @@
 @tailwind utilities;
 
 @layer base{
-    body * {
+    * {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+    }
+
+    h1{
+        @apply text-4xl sm:text-5xl md:text-5xl text-white ;
+        line-height: 3.5rem !important;
+    }
+
+    h2{
+        @apply text-5xl md:text-7xl font-bold;
+    }
+
+    p{
+        @apply text-base sm:text-lg;
+    }
+
+    .wrapper-header-hero{
+        @apply py-8 m-auto text-white w-5/6 max-w-screen-2xl; 
     }
 
     .headerLink {
@@ -115,7 +132,4 @@
         transform: translateX(0) !important;
     }
 
-    .wrapper-header-hero{
-        @apply px-8 lg:px-20 py-8 text-white;
-    }
 }

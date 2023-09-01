@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [])
   
   return (
-    <main className={poppins.className}>
+    <main className={`${poppins.className} w-full min-h-screen`}>
       <Header/> 
       <Component {...pageProps} />
     </main>
