@@ -17,7 +17,8 @@ const Hero = () => {
                 </Link>
             </div>
 
-            <div className='hidden xl:flex'>
+            <div className='hidden xl:flex relative' data-aos="zoom-out">
+                <div className='w-full h-full absolute degradeBackground z-10 opacity-40'></div>
                 <Image
                     src="/hero-bg.jpg"
                     width={600}
@@ -25,7 +26,6 @@ const Hero = () => {
                     alt="Coding image"
                     objectFit='cover'
                     className='object-cover rounded-md'
-                    data-aos="zoom-out"
                 />        
             </div>
         </section>
