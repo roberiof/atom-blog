@@ -1,18 +1,19 @@
 import React , { useState , useEffect } from 'react'
 import { PostType } from '@/pages/types'
-import Post from '../allPosts/Post'
-import  { register } from 'swiper/element/bundle'
-register()
+import Post from '../utils/Post'
 import 'swiper/css'
-import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/scrollbar' 
 import { Swiper , SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination,  A11y } from 'swiper/modules';
 
 const CarouselPosts = ({posts} : {posts: PostType[]}) => {
-  const [ slidesPerView , setSlidesPerView ] = useState<number>(2)
-
+  const [ slidesPerView , setSlidesPerView ] = useState<number | null>(null)
+  const settingsSwiper = {
+    modules: [Pagination],
+    spaceBetween: 80,
+    slidesPerView: slidesPerView,
+    pagination: {clickable: true}
+  }
   
   useEffect( () => {
     const handleResize = () => {
@@ -35,18 +36,14 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
   })
 
   return (
-    <div className='pb-10 lg:pt-32'>
+    <div className='lg:pt-32'>
       <section className='wrapper-content flex justify-between items-center gap-x-28'>
-  
         <Swiper                   
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={80}
-          slidesPerView={slidesPerView}
-          pagination={{clickable: true}}
+          {...settingsSwiper}
         >
           {posts.map( (post, index) => (
             <SwiperSlide key={index}>
-                <Post post={post}/>
+                <Post post={post} containerStyles={'select-none overflow-hidden cursor-grab max-w-screen-sm'}/>
             </SwiperSlide>
           ))}
         </Swiper>

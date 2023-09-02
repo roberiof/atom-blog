@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
     <div className='bg-primary pt-24 lg:pt-40 relative'>
-        <section className='wrapper-header-hero flex justify-between items-center gap-x-14 pb-28'>
+        <section className='wrapper-header-hero flex justify-between items-center gap-x-14'>
             <div className='w-full xl:w-1/2 flex flex-col gap-8'>
                 <h1 className='font-bold text-secondary' data-aos="fade-up"> Veja o guia definitivo para conquistar seus objetivos como DEV em 2022 </h1>
                 <p className='leading-8' data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
@@ -28,7 +28,7 @@ const Hero = () => {
                 />        
             </div>
         </section>
-        <div className='h-1 bg-tertiary'></div>
+        <div className='h-1 bg-tertiary mt-20'></div>
     </div>
    
     </>

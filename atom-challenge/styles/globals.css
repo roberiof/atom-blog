@@ -25,16 +25,31 @@
 }
 
 @layer utilities{
+    /* WRAPPER TO SPACE HEADER AND HERO */
     .wrapper-header-hero{
         @apply py-8 m-auto text-white w-5/6 max-w-screen-2xl; 
     }
 
+    /* WRAPPER TO SPACE SECTION THAT WHAT NOT HEADER OR HERO */
     .wrapper-content{
         @apply py-8 m-auto w-5/6 max-w-screen-2xl;     
     }
 
+    /* DEGRADE USED FOR IMAGES */
     .degradeBackground{
         background: linear-gradient(104.9deg, rgba(239, 35, 243, 0.7) -2.03%, rgba(195, 38, 228, 0.7) 27.04%, rgba(139, 42, 209, 0.7) 67.97%, rgba(92, 44, 193, 0.7) 107.39%);
+    }
+
+    /* LIMITATE CARD TITLE AND DESCRIPTION  */
+    .post-title, .post-description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Adjust to limit the number of lines */
+        -webkit-box-orient: vertical;
+    }
+    .post-description{
+        -webkit-line-clamp: 3; /* Adjust to limit the number of lines */
     }
 }
 

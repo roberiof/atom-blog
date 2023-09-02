@@ -20,7 +20,7 @@ const Header = () => {
                 />
             </Link>
 
-            <div className='hidden lg:flex gap-8'>
+            <div className='hidden lg:flex gap-8 ml-20'>
                 <Link className="headerLink" href={'/'} onClick={() => setIsMenuOpened(false)}> Home </Link>
                 <Link className="headerLink" href={'/AllPosts'} onClick={() => setIsMenuOpened(false)}> All Posts </Link>
                 <Link className="headerLink" href={'/Contact'} onClick={() => setIsMenuOpened(false)}> Contato </Link>
@@ -42,7 +42,7 @@ const Header = () => {
             <Link className="headerLink" href={'/'} onClick={() => setIsMenuOpened(false)}> Home </Link>
             <Link className="headerLink" href={'/AllPosts'} onClick={() => setIsMenuOpened(false)}> All Posts </Link>
             <Link className="headerLink" href={'/Contact'} onClick={() => setIsMenuOpened(false)}> Contato </Link>
-            <SearchPosts containerStylesForm={'flex lg:hidden mt-8'}/>
+            <SearchPosts containerStylesForm={'flex lg:hidden mt-8'} setIsMenuOpened={setIsMenuOpened}/>
         </div>
       </div>
     </>

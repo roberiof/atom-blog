@@ -14,7 +14,7 @@ const WrapperMainPosts = () => {
 
   useEffect( () => {
     getPosts()
-  }, [])
+  } , [])
 
   return (
     <>
