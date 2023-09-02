@@ -1,5 +1,5 @@
 import React , { useState , useEffect } from 'react'
-import PostType from '@/types'
+import {PostType} from '@/types'
 import Post from '../utils/Post'
 import 'swiper/css'
 import 'swiper/css/a11y'

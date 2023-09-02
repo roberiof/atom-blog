@@ -1,5 +1,5 @@
 import React from 'react'
-import PostType from '@/types'
+import {PostType} from '@/types'
 import Image from 'next/image'
 
 const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
@@ -10,7 +10,7 @@ const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
         <div className='w-full lg:w-1/2 flex flex-col gap-8' data-aos="zoom-out">
             <div className='w-full relative'>
               <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
-              { posts &&            
+              { posts &&  posts[0] &&          
                 <Image
                     src={posts[0]?.image}
                     width={900}

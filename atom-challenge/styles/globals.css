@@ -163,4 +163,39 @@
     .hiddenMenu-active{
         transform: translateX(0) !important;
     }
+
+
+    .inputDiv {
+        width: 100%;
+        position: relative;
+    }
+
+    .inputDiv  label {
+        color: #290742;
+        font-size: 18px;
+        background-color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        font-weight: 700;
+        padding: 0 7px;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+
+    .inputDiv input , .inputDiv textarea {
+        outline: 0;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 20px;
+        border: 2px solid #290742;
+        border-radius: 5px;
+    }
+
+      
+    .inputDiv.focus label {
+        font-size: 16px;
+        top: -10px;
+        left: 10px;
+    }
 }

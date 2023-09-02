@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import Post from './components/utils/Post'
 import { PostsContext } from '../context/PostsContext'
 import { SearchInputContext } from '../context/SearchInputContext'
-import PostType from '../types'
+import {PostType} from '../types'
 import { getAllPostsAPI } from '../utils'
 
 const AllPosts = () => {
@@ -38,7 +38,7 @@ const AllPosts = () => {
               </p>
         }
 
-        <div className='flex flex-wrap justify-around gap-5'>
+        <div className='flex flex-wrap justify-around gap-2'>
           { posts && <span> Loading ... </span>  
             && searchInput 
             ? filteredPosts.map( (post: PostType) =>
