@@ -7,7 +7,7 @@ import { Swiper , SwiperSlide } from 'swiper/react'
 import { Pagination,  A11y } from 'swiper/modules';
 
 const CarouselPosts = ({posts} : {posts: PostType[]}) => {
-  const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(undefined)
+  const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(2)
   // this type must be number | undefined to match the settingsSwiper
   const settingsSwiper = {
     modules: [Pagination, A11y],
