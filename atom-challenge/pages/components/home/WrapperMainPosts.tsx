@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import ThreeMainPosts from './ThreeMainPosts'
 import CarouselPosts from './CarouselPosts'
-import { getAllPostsAPI } from '@/pages/utils'
-import { PostsContext } from '@/pages/context/PostsContext';
+import { getAllPostsAPI } from '@/utils'
+import { PostsContext } from '@/context/PostsContext';
 
 const WrapperMainPosts = () => {
   const { posts , setPosts } = useContext(PostsContext)

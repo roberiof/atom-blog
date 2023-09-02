@@ -1,5 +1,5 @@
 import { ReactNode, createContext, useState } from "react";
-import { PostType } from "../types";
+import PostType  from "../types";
 
 export const PostsContext = createContext<any>(null)
 

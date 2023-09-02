@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
 import Post from './components/utils/Post'
-import { PostsContext } from './context/PostsContext'
-import { SearchInputContext } from './context/SearchInputContext'
-import { PostType } from './types'
-import { getAllPostsAPI } from './utils'
+import { PostsContext } from '../context/PostsContext'
+import { SearchInputContext } from '../context/SearchInputContext'
+import PostType from '../types'
+import { getAllPostsAPI } from '../utils'
 
 const AllPosts = () => {
   const { posts , setPosts } = useContext(PostsContext)

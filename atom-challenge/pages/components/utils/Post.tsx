@@ -1,4 +1,4 @@
-import { PostType } from '@/pages/types'
+import PostType from '@/types'
 import Image from 'next/image'
 import React from 'react'
 

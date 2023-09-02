@@ -1,5 +1,5 @@
 import React , { useState , useEffect } from 'react'
-import { PostType } from '@/pages/types'
+import PostType from '@/types'
 import Post from '../utils/Post'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -10,7 +10,7 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
   const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(undefined)
   // this type must be number | undefined to match the settingsSwiper
   const settingsSwiper = {
-    modules: [Pagination],
+    modules: [Pagination, A11y],
     spaceBetween: 80,
     slidesPerView: slidesPerView,
     pagination: {clickable: true}
@@ -42,7 +42,7 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
         <Swiper                   
           {...settingsSwiper}
         >
-          {posts.map( (post, index) => (
+          {posts && posts.map( (post, index) => (
             <SwiperSlide key={index}>
                 <Post post={post} containerStyles={'select-none overflow-hidden cursor-grab max-w-screen-sm'}/>
             </SwiperSlide>

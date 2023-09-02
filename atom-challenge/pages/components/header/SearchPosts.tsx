@@ -1,4 +1,4 @@
-import { SearchInputContext } from '@/pages/context/SearchInputContext'
+import { SearchInputContext } from '@/context/SearchInputContext'
 import { useRouter } from 'next/router'
 import React , { useState , useContext } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'

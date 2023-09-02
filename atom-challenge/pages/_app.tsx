@@ -5,8 +5,8 @@ import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/header/Header';
-import { PostsProvider } from './context/PostsContext';
-import { SearchProvider } from './context/SearchInputContext';
+import { PostsProvider } from '../context/PostsContext';
+import { SearchProvider } from '../context/SearchInputContext';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600']})
 
