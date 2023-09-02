@@ -12,7 +12,7 @@ type ObjectKeyType = 'name' | 'email' | 'message'
 
 type InputTextareaEventType = React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>
 
-export const Form = () => {
+const Form = () => {
     const [ isFocusedInputs , setIsFocusedInputs ] = useState<FocusedInputType>({
         name: false,
         email: false,
@@ -107,3 +107,5 @@ export const Form = () => {
     </form>
   )
 }
+
+export default Form

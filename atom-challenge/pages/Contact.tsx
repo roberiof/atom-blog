@@ -1,5 +1,5 @@
 'use client';
-import { Form } from "./components/contact/Form";
+import Form  from "./components/contact/Form";
 
 const Contact = () => {
     return (
@@ -16,7 +16,7 @@ const Contact = () => {
                     </ol>
                     <p className='text-lg mt-4'> Entre em contato! Vamos adorar recebê-lo no nosso inbox.</p>
                 </div>
-                
+
                 <Form/>
             </section>
         </div>
