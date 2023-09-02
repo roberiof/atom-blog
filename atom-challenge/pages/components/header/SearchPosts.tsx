@@ -31,7 +31,7 @@ const SearchPosts = ({containerStylesForm, setIsMenuOpened} : SearchPostType ) =
     <form className={`gap-1 ${containerStylesForm} max-w-full`} onSubmit={(e) => SearchPost(e)}>
         <input type="text" placeholder='Buscar post' required className='bg-primaryDarker text-white py-2 px-4 rounded-md' 
         value={inputResult} onChange={ (e) => setInputResult(e.target.value) }/>
-        <button type='submit' className='bg-secondary p-2 rounded-md text-3xl'> <AiOutlineSearch/> </button>
+        <button type='submit' id="submitBtn" aria-label="Input Result" className='bg-secondary p-2 rounded-md text-3xl'> <AiOutlineSearch/> </button>
     </form>
   )
 }

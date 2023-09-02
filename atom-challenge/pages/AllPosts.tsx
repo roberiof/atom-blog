@@ -24,15 +24,19 @@ const AllPosts = () => {
         {
           filteredPosts.length !== 0 ? 
             <p className={`${searchInput ? 'inline' : 'hidden'} drop-shadow-md italic text-center text-lg mb-20`}> 
-              Resultados para <span className='font-bold text-primary hover:text-tertiary transition-all'> {searchInput} </span>. <span className='cursor-pointer underline' onClick={() => setSearchInput(null)}> Ver todos os posts. </span> 
+              Resultados para <span className='font-bold text-primary hover:text-tertiary transition-all'> {searchInput} </span>. 
+              <a href="#" aria-label="Voltar para home" className='cursor-pointer underline' onClick={() => setSearchInput(null)}>
+                Ver todos os posts. 
+              </a> 
             </p>
           :
               <p className={`${searchInput ? 'inline' : 'hidden'} italic text-center text-lg drop-shadow-md`}> 
-                Não há posts com <span className='font-bold text-primary hover:text-tertiary transition-all'> {searchInput} </span>. <span className='cursor-pointer underline' onClick={() => setSearchInput(null)}> Ver todos os posts. </span>
+                Não há posts com <span className='font-bold text-primary hover:text-tertiary transition-all'> {searchInput} </span>. 
+                <a href="#" aria-label="Voltar para home" className='cursor-pointer underline' onClick={() => setSearchInput(null)}> 
+                  Ver todos os posts. 
+                </a>
               </p>
         }
-
-
 
         <div className='flex flex-wrap justify-around gap-5'>
           { posts && <span> Loading ... </span>  

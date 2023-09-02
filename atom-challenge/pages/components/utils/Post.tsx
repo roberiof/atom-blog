@@ -14,9 +14,10 @@ const Post = ({post , dimensionsImage, containerStyles} : PostProps) => {
         <div className='w-full relative' data-aos="zoom-out">
             <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
             <Image
+                priority
                 src={post?.image}
-                width={dimensionsImage || 900}
-                height={dimensionsImage || 900}
+                width={900 || dimensionsImage }
+                height={900 || dimensionsImage }
                 alt={post?.description}
                 className='object-cover rounded-md'
             />

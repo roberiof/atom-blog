@@ -2,9 +2,10 @@ import React , { useState , useEffect } from 'react'
 import PostType from '@/types'
 import Post from '../utils/Post'
 import 'swiper/css'
+import 'swiper/css/a11y'
 import 'swiper/css/pagination'
 import { Swiper , SwiperSlide } from 'swiper/react'
-import { Pagination,  A11y } from 'swiper/modules';
+import { Pagination, A11y } from 'swiper/modules';
 
 const CarouselPosts = ({posts} : {posts: PostType[]}) => {
   const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(2)
@@ -13,7 +14,7 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
     modules: [Pagination, A11y],
     spaceBetween: 80,
     slidesPerView: slidesPerView,
-    pagination: {clickable: true}
+    pagination: {clickable: true},
   }
   
   useEffect( () => {
@@ -38,7 +39,7 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
 
   return (
     <div className='lg:pt-32'>
-      <section className='wrapper-content flex justify-between items-center gap-x-28'>
+      <section className='wrapper-content'>
         <Swiper                   
           {...settingsSwiper}
         >
