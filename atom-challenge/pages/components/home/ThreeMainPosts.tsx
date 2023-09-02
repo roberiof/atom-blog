@@ -10,7 +10,7 @@ const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
         <div className='w-full lg:w-1/2 flex flex-col gap-8' data-aos="zoom-out">
             <div className='w-full relative'>
               <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
-              { posts[0] &&            
+              { posts &&            
                 <Image
                     src={posts[0]?.image}
                     width={900}
@@ -23,9 +23,9 @@ const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
 
 
             <div className='flex flex-col gap-4'>
-              <p className='text-sm text-gray-600'> {posts[0] && posts[0]?.date} </p>
-              <h2 className='hover:underline'> {posts[0] && posts[0]?.title} </h2>
-              <p className='text-base'> {posts[0] && posts[0]?.description} </p>
+              <p className='text-sm text-gray-600'> {posts && posts[0]?.date} </p>
+              <h2 className='hover:underline'> {posts && posts[0]?.title} </h2>
+              <p className='text-base'> {posts && posts[0]?.description} </p>
             </div>
         </div>
 
