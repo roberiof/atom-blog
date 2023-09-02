@@ -23,9 +23,9 @@ const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
 
 
             <div className='flex flex-col gap-4'>
-              <p className='text-sm text-gray-600'> {posts && posts[0]?.date} </p>
-              <h2 className='hover:underline'> {posts && posts[0]?.title} </h2>
-              <p className='text-base'> {posts && posts[0]?.description} </p>
+              <p className='text-sm text-gray-600'> {posts[0] && posts[0]?.date} </p>
+              <h2 className='hover:underline'> {posts[0] && posts[0]?.title} </h2>
+              <p className='text-base'> {posts[0] && posts[0]?.description} </p>
             </div>
         </div>
 
