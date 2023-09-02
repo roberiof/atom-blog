@@ -7,14 +7,13 @@ import { PostsContext } from '@/pages/context/PostsContext';
 const WrapperMainPosts = () => {
   const { posts , setPosts } = useContext(PostsContext)
 
-  const getPosts = async() => {
-    const response = await getAllPostsAPI()
-    setPosts(response)
-  } 
-
   useEffect( () => {
+    const getPosts = async() => {
+      const response = await getAllPostsAPI()
+      setPosts(response)
+    } 
     getPosts()
-  } , [])
+  } , [setPosts])
 
   return (
     <>
