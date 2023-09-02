@@ -10,13 +10,15 @@ const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
         <div className='w-full lg:w-1/2 flex flex-col gap-8' data-aos="zoom-out">
             <div className='w-full relative'>
               <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
+              { posts[0] &&            
                 <Image
-                    src={posts && posts[0]?.image}
+                    src={posts[0]?.image}
                     width={900}
                     height={400}
                     alt="ReactJS 2022"
                     className='object-cover rounded-md'
                   />
+              }
             </div>
 
 

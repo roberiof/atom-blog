@@ -13,7 +13,8 @@ const Header = () => {
         <header className='wrapper-header-hero flex justify-between items-center' ref={header}>
             <Link href='/'>
                 <Image
-                    src="/logo.png"
+                    src="/logo.webp"
+                    priority
                     width={100}
                     height={100}
                     alt="Logo"

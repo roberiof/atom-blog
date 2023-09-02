@@ -20,11 +20,12 @@ const Hero = () => {
             <div className='hidden xl:flex relative' data-aos="zoom-out">
                 <div className='w-full h-full absolute degradeBackground z-10 opacity-40 rounded-md'></div>
                 <Image
-                    src="/hero-bg.jpg"
+                    src="/hero-bg.webp"
+                    priority
                     width={600}
                     height={600}
                     alt="Coding image"
-                    className='object-cover rounded-md'
+                    className='object-cover rounded-md w-auto h-auto'
                 />        
             </div>
         </section>
