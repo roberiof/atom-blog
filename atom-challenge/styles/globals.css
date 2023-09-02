@@ -15,17 +15,31 @@
     }
 
     h2{
-        @apply text-5xl md:text-7xl font-bold;
+        @apply text-2xl md:text-3xl font-bold text-primary;
+        line-height: 2.5rem !important;
     }
 
     p{
-        @apply text-base sm:text-lg;
+        @apply text-sm md:text-base;
     }
+}
 
+@layer utilities{
     .wrapper-header-hero{
         @apply py-8 m-auto text-white w-5/6 max-w-screen-2xl; 
     }
 
+    .wrapper-content{
+        @apply py-8 m-auto w-5/6 max-w-screen-2xl;     
+    }
+
+    .degradeBackground{
+        background: linear-gradient(104.9deg, rgba(239, 35, 243, 0.7) -2.03%, rgba(195, 38, 228, 0.7) 27.04%, rgba(139, 42, 209, 0.7) 67.97%, rgba(92, 44, 193, 0.7) 107.39%);
+    }
+}
+
+@layer components{
+    /* HEADER LINKS EFFECTS */
     .headerLink {
         color: white;
         text-decoration: none;
@@ -65,6 +79,7 @@
         transform: translateX(0);
     }
 
+    /* HIDDEN ICON FOR MOBILE MENU */
     .hiddenIcon{
         flex-direction: column;
         justify-content: space-around;
@@ -74,7 +89,7 @@
         border: none;
         cursor: pointer;
         padding: 0;
-        z-index: 10;
+        z-index: 50;
     }
     
     .hiddenIcon div{
@@ -109,6 +124,8 @@
         transform: rotate(-45deg) !important
     }
 
+
+    /* HIDDEN MOBILE MENU */
     .hiddenMenu{
         flex-direction: column;
         justify-content: flex-start;
@@ -122,7 +139,7 @@
         right: 0; 
         padding-inline: 2rem;
         max-width: 100%;
-        z-index: 40;
+        z-index: 50;
         display: flex;
         gap: 1rem;
         padding-top: 2rem;
@@ -130,9 +147,5 @@
     
     .hiddenMenu-active{
         transform: translateX(0) !important;
-    }
-
-    .degradeBackground{
-        background: linear-gradient(104.9deg, rgba(239, 35, 243, 0.7) -2.03%, rgba(195, 38, 228, 0.7) 27.04%, rgba(139, 42, 209, 0.7) 67.97%, rgba(92, 44, 193, 0.7) 107.39%);
     }
 }

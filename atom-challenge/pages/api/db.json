@@ -31,7 +31,7 @@
     {
       "id": 5,
       "date": "Janeiro 04, 2022",
-      "title": "Deixe seu código mais semântico com essas dicas",
+      "title": "Código mais semântico com essas dicas",
       "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique."
     },
@@ -40,6 +40,20 @@
       "date": "Janeiro 04, 2022",
       "title": "Use essas dicas nas suas aplicações mobile",
       "image": "https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique."
+    },
+    {
+      "id": 7,
+      "date": "Janeiro 04, 2022",
+      "title": "Os avanços tecnológicos surpreendentes",
+      "image": "https://images.unsplash.com/photo-1601132359864-c974e79890ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique."
+    },
+    {
+      "id": 8,
+      "date": "Janeiro 04, 2022",
+      "title": "Os gadgets que estão mudando nossa vida.",
+      "image": "https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique."
     }
   ]

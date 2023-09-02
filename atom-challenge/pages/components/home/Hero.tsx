@@ -6,8 +6,8 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 const Hero = () => {
   return (
     <>
-    <div className='bg-primary pt-24 pb-24 lg:pt-40 relative'>
-        <section className='wrapper-header-hero flex justify-between items-center gap-x-14'>
+    <div className='bg-primary pt-24 lg:pt-40 relative'>
+        <section className='wrapper-header-hero flex justify-between items-center gap-x-14 pb-28'>
             <div className='w-full xl:w-1/2 flex flex-col gap-8'>
                 <h1 className='font-bold text-secondary' data-aos="fade-up"> Veja o guia definitivo para conquistar seus objetivos como DEV em 2022 </h1>
                 <p className='leading-8' data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
@@ -18,17 +18,17 @@ const Hero = () => {
             </div>
 
             <div className='hidden xl:flex relative' data-aos="zoom-out">
-                <div className='w-full h-full absolute degradeBackground z-10 opacity-40'></div>
+                <div className='w-full h-full absolute degradeBackground z-10 opacity-40 rounded-md'></div>
                 <Image
                     src="/hero-bg.jpg"
                     width={600}
                     height={600}
                     alt="Coding image"
-                    objectFit='cover'
                     className='object-cover rounded-md'
                 />        
             </div>
         </section>
+        <div className='h-1 bg-tertiary'></div>
     </div>
    
     </>

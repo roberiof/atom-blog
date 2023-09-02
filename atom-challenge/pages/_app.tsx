@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/header/Header';
+import { PostsProvider } from './context/PostsContext';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600']})
 
@@ -15,8 +16,10 @@ export default function App({ Component, pageProps }: AppProps) {
   
   return (
     <main className={`${poppins.className} w-full min-h-screen`}>
-      <Header/> 
-      <Component {...pageProps} />
+      <PostsProvider>
+        <Header/>
+        <Component {...pageProps} />
+      </PostsProvider>
     </main>
   )
 }

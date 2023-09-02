@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='bg-primary fixed w-full z-10'>
+      <div className='bg-primary fixed w-full z-50'>
         <header className='wrapper-header-hero flex justify-between items-center' ref={header}>
             <Link href='/'>
                 <Image
