@@ -15,7 +15,7 @@ Or you can see the project deploy right now: [https://atom-blog-theta.vercel.app
 
 
 ## ☕ More about 
-Blog for Atom Studio company in 48 hours, the time started at 9:30 in Friday. 
+Blog for Atom Studio company in 48 hours, the time started at 9:30 at Friday. 
 <br>
 <br>
 Total Work Time: **_5,5h_ (Friday - 01/09),  _12h_ (Saturday - 02/09),  _2,5h_ (Sunday - 03/09).**
