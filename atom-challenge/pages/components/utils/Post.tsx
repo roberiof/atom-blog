@@ -11,7 +11,7 @@ interface PostProps {
 const Post = ({post , dimensionsImage, containerStyles} : PostProps) => {
   return (
     <div className={`flex flex-col gap-2 mb-16 ${containerStyles} shadow-md p-8 px-4 rounded-lg`} data-aos='flip-right'>
-        <div className='w-full relative' data-aos="zoom-out">
+        <div className='w-full relative'>
             <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
             <Image
                 priority

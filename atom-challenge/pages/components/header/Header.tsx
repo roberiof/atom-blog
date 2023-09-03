@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <>
-      <div className='bg-primary fixed w-full z-50'>
+      <div className='bg-primary fixed w-full z-50 top-0'>
         <header className='wrapper-header-hero flex justify-between items-center z-50' ref={header}>
-            <Link href='/'>
+            <Link href='/' onClick={() => setIsMenuOpened(false)}>
                 <Image
                     src="/logo.webp"
                     priority
