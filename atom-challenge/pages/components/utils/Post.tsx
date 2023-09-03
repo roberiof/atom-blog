@@ -10,7 +10,7 @@ interface PostProps {
 
 const Post = ({post , dimensionsImage, containerStyles} : PostProps) => {
   return (
-    <div className={`flex flex-col gap-2 mb-20 ${containerStyles} shadow-md p-8 px-4 rounded-lg`} data-aos='flip-right'>
+    <div className={`flex flex-col gap-2 mb-14 ${containerStyles} shadow-md p-8 px-4 rounded-lg`} data-aos='flip-right'>
         <div className='w-full relative'>
             <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
             <Image
