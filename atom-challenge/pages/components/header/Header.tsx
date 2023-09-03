@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <div className='bg-primary fixed w-full z-50 top-0'>
         <header className='wrapper-content flex justify-between items-center z-50' ref={header}>
-            {/* <Link href='/' onClick={() => setIsMenuOpened(false)}>
+            <Link href='/' onClick={() => setIsMenuOpened(false)}>
                 <Image
                     src="/logo.webp"
                     priority
@@ -20,7 +20,7 @@ const Header = () => {
                     alt="Logo"
                     className='z-50'
                 />
-            </Link> */}
+            </Link>
 
             <div className='hidden lg:flex gap-8 ml-20 z-50'>
                 <Link className="headerLink" href={'/'} onClick={() => setIsMenuOpened(false)}> Home </Link>

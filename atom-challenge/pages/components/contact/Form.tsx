@@ -47,13 +47,19 @@ const Form = () => {
         })
     }
 
-    const StoreMessage = (e:React.FormEvent<HTMLFormElement>) =>{
+    const StoreMessage = async(e:React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault()  
-        PostMessageAPi(formValues)
-        setTimeout( () => (
-            alert('Mensagem enviada com sucesso!')
-        ), 400)
-        setFormValues(defaultFormValues)
+        const response = await PostMessageAPi(formValues)
+                        .then(data => data !== 'error' && data.json())
+        if (response === 'error' || JSON.stringify(response) === '{}'){
+            alert('Algum erro ocorreu com o nosso banco de dados. Sua mensagem não pode ser armazenada corretamente. Recarregue a página.')
+            return 
+        }else{
+            setTimeout( () => (
+                alert('Mensagem enviada com sucesso!')
+            ), 400)
+            setFormValues(defaultFormValues)
+        }
     }
 
     useEffect(() => {

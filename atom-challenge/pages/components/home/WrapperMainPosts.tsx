@@ -10,15 +10,20 @@ const WrapperMainPosts = () => {
   useEffect( () => {
     const getPosts = async() => {
       const response = await getAllPostsAPI()
-      setPosts(response)
+      if (response === 'error'  || JSON.stringify(response) === '{}'){
+        alert('Algum erro aconteceu no nosso banco de dados. Recarregue a página ou volte mais tarde.')
+        return 
+      }else{
+        setPosts(response)
+      }
     } 
     getPosts()
   } , [setPosts])
 
   return (
     <>
-        <ThreeMainPosts posts={posts.slice(0,3)}/>
-        <CarouselPosts posts={posts.slice(3)}/>
+      <ThreeMainPosts posts={posts.slice(0,3)}/>
+      <CarouselPosts posts={posts.slice(3)}/>
     </>
   )
 }

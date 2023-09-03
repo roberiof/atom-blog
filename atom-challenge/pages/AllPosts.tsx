@@ -13,10 +13,15 @@ const AllPosts = () => {
   useEffect( () => {
     const getPosts = async() => {
       const response = await getAllPostsAPI()
-      setPosts(response)
+      if (response === 'error'  || JSON.stringify(response) === '{}'){
+        alert('Algum erro aconteceu no nosso banco de dados. Recarregue a página ou volte mais tarde.')
+        return 
+      }else{
+        setPosts(response)
+      }
     } 
-      getPosts()
-  }, [setPosts])
+    getPosts()
+  } , [setPosts])
   
   return (
     <div className='pt-24 lg:pt-40 relative'>
