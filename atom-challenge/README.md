@@ -15,7 +15,11 @@ Or you can see the project deploy right now: [https://atom-blog-theta.vercel.app
 
 
 ## ☕ More about 
-Blog for Atom Studio company.
+Blog for Atom Studio company in 48 hours, the time started at 9:30 in Friday. 
+<br>
+<br>
+Total Work Time: **_5,5h_ (Friday - 01/09),  _12h_ (Saturday - 02/09),  _2,5h_ (Sunday - 03/09).**
+<br>
 <br>
 Pages:
   * **Home**: See main posts; 
@@ -40,8 +44,14 @@ Pages:
 * Solve easily typing errors with typescript;
 * Organize API workflow;
 
+## 📈 Statistics
+![image](https://github.com/roberiof/atom-blog/assets/107323497/28ef8ac9-e9fb-46cb-b8fd-2f780144c1bb)
+<br>
+![image](https://github.com/roberiof/atom-blog/assets/107323497/8d52bf98-b366-4333-b22f-912cf11d4e49)
+
 ## 🧱 Next Steps
 * Integrate with some real API system;
 * Add a 'Veja Mais' button on the posts and a proper and unique screen for each post;
 * Add page to administrator so them can add its own posts;
-* Create 404 page; 
+* Create 404 page;
+* Improve SEO for mobile;
