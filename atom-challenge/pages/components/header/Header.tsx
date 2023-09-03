@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <div className='bg-primary fixed w-full z-50'>
-        <header className='wrapper-header-hero flex justify-between items-center' ref={header}>
+        <header className='wrapper-header-hero flex justify-between items-center z-50' ref={header}>
             <Link href='/'>
                 <Image
                     src="/logo.webp"
@@ -22,7 +22,7 @@ const Header = () => {
                 />
             </Link>
 
-            <div className='hidden lg:flex gap-8 ml-20'>
+            <div className='hidden lg:flex gap-8 ml-20 z-50'>
                 <Link className="headerLink" href={'/'} onClick={() => setIsMenuOpened(false)}> Home </Link>
                 <Link className="headerLink" href={'/AllPosts'} onClick={() => setIsMenuOpened(false)}> All Posts </Link>
                 <Link className="headerLink" href={'/Contact'} onClick={() => setIsMenuOpened(false)}> Contato </Link>
