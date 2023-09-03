@@ -63,7 +63,7 @@ const Form = () => {
       }, [formValues]);
 
   return (
-    <form className='w-full xl:w-1/2 mt-8 lg:mt-0' onSubmit={(e) => StoreMessage(e)}> 
+    <form className='w-full xl:w-1/2 mt-8 xl:mt-0 mb-20 xl:mb-0' onSubmit={(e) => StoreMessage(e)}> 
         <div className='w-full xl:w-2/3 m-auto flex flex-col gap-8' data-aos="fade-left">
             <div className={`${isFocusedInputs.name ? 'focus' : ''} inputDiv`}>
                 <label htmlFor="name"> Name </label>
