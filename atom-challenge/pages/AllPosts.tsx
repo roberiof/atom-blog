@@ -20,7 +20,7 @@ const AllPosts = () => {
   
   return (
     <div className='pt-24 lg:pt-40 relative'>
-      <section className='wrapper-content flex flex-col transition-all'>
+      <section className='wrapper-content max-w-screen flex flex-col transition-all'>
         {
           filteredPosts.length !== 0 ? 
             <p className={`${searchInput ? 'inline' : 'hidden'} drop-shadow-md italic text-center text-lg mb-20`}> 
@@ -38,7 +38,7 @@ const AllPosts = () => {
               </p>
         }
 
-        <div className='flex flex-wrap justify-around gap-2'>
+        <div className='flex flex-wrap justify-around gap-8'>
           { posts && <span> Loading ... </span>  
             && searchInput 
             ? filteredPosts.map( (post: PostType) =>

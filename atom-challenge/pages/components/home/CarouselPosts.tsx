@@ -8,22 +8,22 @@ import { Swiper , SwiperSlide } from 'swiper/react'
 import { Pagination, A11y } from 'swiper/modules';
 
 const CarouselPosts = ({posts} : {posts: PostType[]}) => {
-  const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(2)
+  const [ slidesPerView , setSlidesPerView ] = useState<number | undefined>(3)
   // this type must be number | undefined to match the settingsSwiper
   const settingsSwiper = {
     modules: [Pagination, A11y],
-    spaceBetween: 80,
+    spaceBetween: 30,
     slidesPerView: slidesPerView,
     pagination: {clickable: true},
   }
   
   useEffect( () => {
     const handleResize = () => {
-      if(window.innerWidth < 800){
+      if(window.innerWidth < 490){
         setSlidesPerView(1)
-      }else if(window.innerWidth <= 1380 && window.innerWidth >= 800){
+      }else if(window.innerWidth <= 1090 && window.innerWidth >= 490){
         setSlidesPerView(2)
-      } else {
+      } else{
         setSlidesPerView(3)
       }
     }
@@ -38,14 +38,14 @@ const CarouselPosts = ({posts} : {posts: PostType[]}) => {
   })
 
   return (
-    <div className='lg:pt-32'>
-      <section className='wrapper-content'>
+    <div className='lg:pt-28'>
+      <section className='wrapper-content justify-center flex' >
         <Swiper                   
           {...settingsSwiper}
         >
           {posts && posts.map( (post, index) => (
             <SwiperSlide key={index}>
-                <Post post={post} containerStyles={'select-none overflow-hidden cursor-grab max-w-screen-sm'}/>
+                <Post post={post} containerStyles={'select-none overflow-hidden cursor-grab max-w-sm justify-center flex'}/>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -4,17 +4,17 @@ import Image from 'next/image'
 
 const ThreeMainPosts = ({posts} : {posts: PostType[]}) => {
   return (
-    <div className='pt-12 pb-8 lg:pt-32'>
-      <section className='wrapper-content flex justify-between items-center gap-x-28'>
+    <div className='pt-12 lg:pt-32'>
+      <section className='wrapper-content flex justify-between items-center gap-28'>
 
-        <div className='w-full lg:w-1/2 flex flex-col gap-8' data-aos="zoom-out">
+        <div className='w-full lg:w-1/2 flex flex-col gap-8 lg:pr-16' data-aos="zoom-out">
             <div className='w-full relative'>
               <div className='w-full h-full degradeBackground absolute z-20 opacity-40 rounded-md'></div>
               { posts &&  posts[0] &&          
                 <Image
                     src={posts[0]?.image}
                     width={900}
-                    height={400}
+                    height={900}
                     alt="ReactJS 2022"
                     className='object-cover rounded-md'
                   />

@@ -3,7 +3,7 @@ import Form  from "./components/contact/Form";
 
 const Contact = () => {
     return (
-        <div className='relative pt-24 lg:pt-60'>
+        <div className='relative py-24 lg:py-32 2xl:py-36'>
             <section className='wrapper-content flex flex-col xl:flex-row items-end gap-16'>
                 <div className='flex flex-col gap-4 w-full xl:w-1/2'>
                     <h1 className='text-primary'> Sobre </h1>

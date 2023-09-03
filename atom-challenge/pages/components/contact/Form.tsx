@@ -90,6 +90,8 @@ const Form = () => {
             <div className={`${isFocusedInputs.message ? 'focus' : ''} inputDiv`}>
                 <label htmlFor="message"> Message </label>
                 <textarea
+                    rows={4}
+                    cols={40}
                     required
                     onFocus={() => handleFocusChange('message')}
                     onBlur={() => handleFocusChange('message')}
