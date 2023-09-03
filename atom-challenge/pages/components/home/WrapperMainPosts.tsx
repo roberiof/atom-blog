@@ -10,13 +10,8 @@ const WrapperMainPosts = () => {
   useEffect( () => {
     const getPosts = async() => {
       const response = await getAllPostsAPI()
-      if (response === 'error'  || JSON.stringify(response) === '{}'){
-        alert('Algum erro aconteceu no nosso banco de dados. Recarregue a página ou volte mais tarde.')
-        return 
-      }else{
-        setPosts(response)
-      }
-    } 
+      setPosts(response)
+    }
     getPosts()
   } , [setPosts])
 

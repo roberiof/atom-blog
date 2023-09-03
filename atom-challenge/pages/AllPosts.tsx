@@ -13,12 +13,7 @@ const AllPosts = () => {
   useEffect( () => {
     const getPosts = async() => {
       const response = await getAllPostsAPI()
-      if (response === 'error'  || JSON.stringify(response) === '{}'){
-        alert('Algum erro aconteceu no nosso banco de dados. Recarregue a página ou volte mais tarde.')
-        return 
-      }else{
-        setPosts(response)
-      }
+      setPosts(response)
     } 
     getPosts()
   } , [setPosts])
@@ -47,9 +42,9 @@ const AllPosts = () => {
           { posts && <span> Loading ... </span>  
             && searchInput 
             ? filteredPosts.map( (post: PostType) =>
-               (<Post key={post.id} post={post} dimensionsImage={800} containerStyles={'cursor-pointer max-w-sm w-full'}/>) )   
+               (<Post key={post.id} post={post} dimensionsImage={800} containerStyles={'cursor-pointer max-w-xs w-full'}/>) )   
             : posts.map((post : PostType) => (
-              <Post key={post.id} post={post} dimensionsImage={800} containerStyles={'cursor-pointer max-w-sm w-full'}/>
+              <Post key={post.id} post={post} dimensionsImage={800} containerStyles={'cursor-pointer max-w-xs w-full'}/>
             )) 
           }
         </div>
