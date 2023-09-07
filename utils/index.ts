@@ -1,6 +1,6 @@
 import { MessageType } from "@/types"
 
-export const api = 'https://my-json-server.typicode.com/roberiof/atom-blog/blob/main'
+export const api = 'https://my-json-server.typicode.com/roberiof/dev-blog/blob/main'
 
 export const getAllPostsAPI = async() =>{
     const response = await fetch(`${api}/posts`).then(data => data.json())

@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title> Atom Blog </title>
+        <title> Dev Blog </title>
         <meta name='description' content='O blog em que você fica atualizado de todas as tecnologias do mercado!' />
         <link rel="icon" href="./public/favicon.ico" sizes='any'/>
     </Head>
