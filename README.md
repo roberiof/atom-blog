@@ -11,7 +11,7 @@ You can clone this repo, run:
     ```
 .
 <br>
-Or you can see the project deploy right now: [https://atom-blog-theta.vercel.app/](https://atom-blog-theta.vercel.app/)
+Or you can see the project deploy right now: [https://dev-blog-ruddy-eta.vercel.app/](https://dev-blog-ruddy-eta.vercel.app/)
 
 
 ## ☕ More about 
