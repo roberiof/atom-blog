@@ -21,7 +21,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title> Dev Blog </title>
         <meta name='description' content='O blog em que você fica atualizado de todas as tecnologias do mercado!' />
-        <link rel="icon" href="./public/favicon.ico" sizes='any'/>
     </Head>
 
       <main className={`${poppins.className} w-full min-h-screen`}>
